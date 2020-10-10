@@ -6,3 +6,28 @@ title: About
 To be a hacker.
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
