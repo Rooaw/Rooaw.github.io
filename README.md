@@ -13,7 +13,7 @@
   
 ### 本地启动博客：
 	
-	1. 进 xxx.github.io/ 目录: ```jekyll server```
+	1. 进 xxx.github.io/ 目录，执行命令: jekyll server
 	2. 打开 127.0.0.1:4000
 
 ![To My blog]()   

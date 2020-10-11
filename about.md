@@ -5,6 +5,23 @@ title: About
 
 To be a hacker.
 
+  
+
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+  
 
 
 
@@ -12,22 +29,5 @@ To be a hacker.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
 
