@@ -1,0 +1,18 @@
+I"�<p>现在做网站的时候一套简单流程下来就不知道怎么做了，真的好菜啊，又不知道这个时候应该怎么学习，干脆照着 TK 教主说的按 msf 目录来一遍了。先从漏洞开始，希望不会半途而废。</p>
+
+<p>AIX 的碰到比较少，暂时不做复现，只对漏洞和攻击做一个了解。</p>
+
+<h3 id="rpc_cmsd_opcode21">rpc_cmsd_opcode21</h3>
+
+<p>msf 的 info 命令可以了解这个攻击相关的信息：info exploit/aix/rpc_cmsd_opcode21</p>
+
+<p>这是 IBM AIX 操作系统的日历管理器服务守护程序（rpc.cmsd）操作码21缓冲区溢出，AIX 的日历守护进程库 libcsa.a 中存在栈溢出漏洞。如果 /etc/inetd.conf 中启用了 rpc.cmsd 日历守护进程，则在处理对 21 号远程过程的请求时函数取了两个 XDR 字符串参数并将第一个拷贝到了栈缓冲区。由于缺少长度检查，这个拷贝操作可能溢出，导致以 root 用户权限执行任意代码。</p>
+
+<h3 id="rpc_ttdbserverd_realpath">rpc_ttdbserverd_realpath</h3>
+
+<p>ToolTalk 数据库服务器（rpc.ttdbserverd）的 _tt_internal_realpath 函数中的缓冲区溢出漏洞。<br />
+<br />
+CommonDesktopEnvironment(CDE)是一款集成图形用户接口，运行在各种 UNIX 和 LINUX 操作系统下，CDEToolTalk 服务允许独立的开发应用程序，使应用程序可以跨主机和平台交换 ToolTalk 信息相互之间通信，使用 ToolTalk 服务，应用程序可以建立开放协议允许各种程序进行交换和新的程序插入到系统中可以尽可能最小化重新配置。 ToolTalkRPC 数据库服务程序，rpc.ttdbserverd 用于管理 ToolTalk 应用通信。很多 Unix 系统厂商默认都安装了 CDE。ToolTalk 数据库服务的一个执行错误可以使远程攻击者在支持 ToolTalk 服务的主机上以超级用户的权限运行任意指令。在 ToolTalk 数据库服务发生执行错误的时候，远程客户端发送一个恶意的 RPC 消息可能引起一个堆变量的溢出，执行恶意 RPC 消息里的任意指令，从而获得主机的 root 用户权限。</p>
+
+<h3 id="localibstat-path-privilege-escalation">/local/ibstat $PATH Privilege Escalation</h3>
+:ET
