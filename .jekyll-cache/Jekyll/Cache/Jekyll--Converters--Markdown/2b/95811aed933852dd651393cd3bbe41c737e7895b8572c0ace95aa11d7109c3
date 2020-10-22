@@ -1,0 +1,7 @@
+I"r<h3 id="安装中文输入">安装中文输入</h3>
+<ol>
+  <li><code class="language-plaintext highlighter-rouge">apt-get install fcitx fcitx-googlepinyin</code></li>
+  <li><code class="language-plaintext highlighter-rouge">reboot</code></li>
+  <li>Input Method 需要选上 Google Pinyin，没找到可以把 Only Show Current Language 这个的勾选去掉</li>
+</ol>
+:ET
