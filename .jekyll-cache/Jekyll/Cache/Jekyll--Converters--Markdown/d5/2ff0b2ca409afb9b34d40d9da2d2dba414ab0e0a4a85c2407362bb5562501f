@@ -1,0 +1,20 @@
+I"�<h3 id="安装中文输入">安装中文输入</h3>
+<ol>
+  <li><code class="language-plaintext highlighter-rouge">apt-get install fcitx fcitx-googlepinyin</code></li>
+  <li><code class="language-plaintext highlighter-rouge">reboot</code></li>
+  <li>Input Method 需要选上 Google Pinyin，没找到可以把 Only Show Current Language 这个的勾选去掉</li>
+</ol>
+
+<h3 id="更新源">更新源</h3>
+<ol>
+  <li><code class="language-plaintext highlighter-rouge">vim /etc/apt/sources.list</code></li>
+  <li>最后添加：
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>deb http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib
+deb-src http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib
+</code></pre></div>    </div>
+  </li>
+  <li>更新：<code class="language-plaintext highlighter-rouge">apt update</code></li>
+  <li>再更新：<code class="language-plaintext highlighter-rouge">apt full-upgrade</code></li>
+</ol>
+
+:ET

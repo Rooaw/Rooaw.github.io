@@ -1,0 +1,7 @@
+I"j<h3 id="永久关闭实时保护">永久关闭实时保护</h3>
+<ol>
+  <li>打开编辑注册表</li>
+  <li>进入HKEY_LOCAL_MACHINE-&gt;software-&gt;Policies-&gt;Microsoft-&gt;Windows Defender</li>
+  <li>选中 Windows Defender，在右边新建 DWORD 32那个，命名为 DisableAntiSpyware，然后双击 DisableAntiSpyware 设置 value date 为 1</li>
+</ol>
+:ET
