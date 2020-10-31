@@ -8,6 +8,7 @@ tags: 渗透 工具
 ### 渗透流程
 [渗透流程](https://my.oschina.net/u/4588149/blog/4684434)
 
+
 ### 前期信息探测
 
 1. 确认是否真实 ip：
@@ -42,6 +43,7 @@ sqlmap
 
 4. 字典生成：
 * [cupp](https://github.com/Mebus/cupp.git)
+
 
 ### 应急
 
