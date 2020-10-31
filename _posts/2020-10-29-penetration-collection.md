@@ -6,7 +6,7 @@ tags: 渗透 工具
 ---
 
 ### 渗透流程
-[渗透流程](https://my.oschina.net/u/4588149/blog/4684434)
+* [渗透流程参考文章](https://my.oschina.net/u/4588149/blog/4684434)
 
 
 ### 前期信息探测
@@ -41,8 +41,10 @@ sqlmap
 
 3. csrf
 
-4. 字典生成：
+4. 字典：
 * [cupp](https://github.com/Mebus/cupp.git)
+* [SecLists](https://github.com/danielmiessler/SecLists)
+* [fuzzDicts](https://github.com/TheKingOfDuck/fuzzDicts)
 
 
 ### 应急
@@ -59,9 +61,6 @@ sqlmap
 1. 代理池：
 * [IPProxyPool](https://github.com/qiyeboy/IPProxyPool)
 * [Proxy_Pool](https://github.com/TideSec/Proxy_Pool)
-
-2. 字典：
-[SecLists](https://github.com/danielmiessler/SecLists)
 
 3. 集合
 [SecToolSet](https://github.com/bollwarm/SecToolSet)
